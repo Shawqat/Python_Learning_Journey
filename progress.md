@@ -1,8 +1,8 @@
 # Python → Playwright Automation: Progress Tracker
 
 **Started:** 2026-10-05
-**Current position:** Phase 1 · Day 3 (not started)
-**Last updated:** 2026-10-05 (Day 2 complete)
+**Current position:** Phase 1 · Day 4 (not started)
+**Last updated:** 2026-10-05 (Day 3 complete)
 
 ## How to resume in a new chat
 Paste this whole file and say: "Continue my Python course from where I left off."
@@ -12,7 +12,7 @@ Paste this whole file and say: "Continue my Python course from where I left off.
 ## Phase 1 — Python fundamentals and setup (1–3 weeks)
 - [x] Day 1: Setup, print, variables, data types, input, f-strings
 - [x] Day 2: Conditionals and comparison operators
-- [ ] Day 3: Loops (for, while, range)
+- [x] Day 3: Loops (for, while, range)
 - [ ] Day 4: Lists and tuples
 - [ ] Day 5: Dictionaries and sets
 - [ ] Day 6: Functions
@@ -65,9 +65,16 @@ Paste this whole file and say: "Continue my Python course from where I left off.
 | 2026-10-05 | Day 2 Lab | A 6/6, B correct, C partial (2 of 4 issues), D bug, E correct | D: `if username and password == ""` is not an 'either is empty' check |
 | 2026-10-05 | Day 2 Quiz | 4/5 (80%) | Missed question not identified |
 | 2026-10-05 | Day 2 Part D fix | Self-reported done | Code not reviewed by instructor |
+| 2026-10-05 | Day 3 Lab | A 3/4, B logic bug, C skipped first number, D mostly right (increment placement), E correct, F off-by-one | Needs verification habit: run with known input, compare actual vs expected |
+| 2026-10-05 | Day 3 Quiz | 5/5 (100%) | |
+| 2026-10-05 | Day 3 fixes (B, C, F) | Self-reported done | Code not reviewed by instructor |
 
 ## Weak spots to revisit
 - Value vs. type: quotes make something a str (re-check in Day 2 with comparisons like "5" == 5)
 - `and`/`or` don't distribute: each side needs a full condition (Day 2 Part D). Fix: `if not username or not password:`
 - Reading code for ALL errors, not just the first ones spotted (syntax: missing colons, indentation)
+- Tracing code by hand (trace table: one row per loop iteration)
+- Off-by-one with range (stop value is excluded)
+- Indentation decides what is inside a loop/if
+- Verify before submitting: run with known input, compare actual vs expected
 - Descriptive variable names (snake_case, say what the value IS)
