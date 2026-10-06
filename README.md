@@ -3,10 +3,6 @@
 **Started:** 2026-10-05
 **Current position:** Phase 1 · Day 7 (not started)
 **Last updated:** 2026-10-06 (Day 6 complete)
-
-## How to resume in a new chat
-Paste this whole file and say: "Continue my Python course from where I left off."
-
 ---
 
 ## Phase 1 — Python fundamentals and setup (1–3 weeks)
