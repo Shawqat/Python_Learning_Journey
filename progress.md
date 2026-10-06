@@ -1,8 +1,8 @@
 # Python → Playwright Automation: Progress Tracker
 
 **Started:** 2026-10-05
-**Current position:** Phase 1 · Day 6 (not started)
-**Last updated:** 2026-10-05 (Day 5 complete)
+**Current position:** Phase 1 · Day 7 (not started)
+**Last updated:** 2026-10-06 (Day 6 complete)
 
 ## How to resume in a new chat
 Paste this whole file and say: "Continue my Python course from where I left off."
@@ -15,7 +15,7 @@ Paste this whole file and say: "Continue my Python course from where I left off.
 - [x] Day 3: Loops (for, while, range)
 - [x] Day 4: Lists and tuples
 - [x] Day 5: Dictionaries and sets
-- [ ] Day 6: Functions
+- [x] Day 6: Functions
 - [ ] Day 7: Modules and imports
 - [ ] Day 8: File I/O
 - [ ] Day 9: Exceptions
@@ -74,6 +74,9 @@ Paste this whole file and say: "Continue my Python course from where I left off.
 | 2026-10-05 | Day 5 Lab | A 7/8 (.get() returns None, not error), B small miss (4 skills not 3), C missing, D correct, E bugs named but lamp line left crashing, F(1) union missing, G correct | Pattern: missing requirements and describing fixes in comments instead of applying them |
 | 2026-10-05 | Day 5 Quiz | 5/5 (100%) | |
 | 2026-10-05 | Day 5 fixes (C, E, F1) | Self-reported done | Code not reviewed by instructor |
+| 2026-10-06 | Day 6 Lab | A all correct but missed that show(4) prints 8 as a side effect; B/C/D/E/G correct; F had a hidden bug (checked 'not all digits' instead of 'has a digit') that passed the 4 given tests | Needed one-rule-per-test design to expose the bug; named all bugs in E correctly |
+| 2026-10-06 | Day 6 Quiz | 5/5 (100%) | |
+| 2026-10-06 | Day 6 Part F fix | Self-reported done; explained any(ch.isdigit() for ch in password) correctly | Code not reviewed by instructor |
 
 ## Weak spots to revisit
 - Value vs. type: quotes make something a str (re-check in Day 2 with comparisons like "5" == 5)
@@ -90,4 +93,8 @@ Paste this whole file and say: "Continue my Python course from where I left off.
 - Completeness: copy each requirement into a checklist comment and tick it only when code produces it (flagged Day 4 and Day 5)
 - Apply fixes in code, don't just describe them in comments
 - Use 4 spaces for indentation, not tabs
+- Passing tests don't prove correctness: design each test to break exactly one rule
+- Side effects: a function with print inside prints whenever it is called
+- Flag the line you're least sure about in predictions (skipped Days 4-6)
+- Call each function at least twice / test every branch
 - Descriptive variable names (snake_case, say what the value IS)
