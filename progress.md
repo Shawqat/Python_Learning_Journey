@@ -1,8 +1,8 @@
 # Python → Playwright Automation: Progress Tracker
 
 **Started:** 2026-10-05
-**Current position:** Phase 1 · Day 4 (not started)
-**Last updated:** 2026-10-05 (Day 3 complete)
+**Current position:** Phase 1 · Day 6 (not started)
+**Last updated:** 2026-10-05 (Day 5 complete)
 
 ## How to resume in a new chat
 Paste this whole file and say: "Continue my Python course from where I left off."
@@ -13,8 +13,8 @@ Paste this whole file and say: "Continue my Python course from where I left off.
 - [x] Day 1: Setup, print, variables, data types, input, f-strings
 - [x] Day 2: Conditionals and comparison operators
 - [x] Day 3: Loops (for, while, range)
-- [ ] Day 4: Lists and tuples
-- [ ] Day 5: Dictionaries and sets
+- [x] Day 4: Lists and tuples
+- [x] Day 5: Dictionaries and sets
 - [ ] Day 6: Functions
 - [ ] Day 7: Modules and imports
 - [ ] Day 8: File I/O
@@ -68,6 +68,12 @@ Paste this whole file and say: "Continue my Python course from where I left off.
 | 2026-10-05 | Day 3 Lab | A 3/4, B logic bug, C skipped first number, D mostly right (increment placement), E correct, F off-by-one | Needs verification habit: run with known input, compare actual vs expected |
 | 2026-10-05 | Day 3 Quiz | 5/5 (100%) | |
 | 2026-10-05 | Day 3 fixes (B, C, F) | Self-reported done | Code not reviewed by instructor |
+| 2026-10-05 | Day 4 Lab | A 4/6 (missed aliasing, sort() returns None), B/D/F correct, C worked but did not print the list, E fixed correctly | Did not name the 3 bugs in E; did not report actual output for C |
+| 2026-10-05 | Day 4 Quiz | 5/5 (100%) | Re-tested aliasing and sort() successfully |
+| 2026-10-05 | Day 4 Part C update | Self-reported done | Code not reviewed by instructor |
+| 2026-10-05 | Day 5 Lab | A 7/8 (.get() returns None, not error), B small miss (4 skills not 3), C missing, D correct, E bugs named but lamp line left crashing, F(1) union missing, G correct | Pattern: missing requirements and describing fixes in comments instead of applying them |
+| 2026-10-05 | Day 5 Quiz | 5/5 (100%) | |
+| 2026-10-05 | Day 5 fixes (C, E, F1) | Self-reported done | Code not reviewed by instructor |
 
 ## Weak spots to revisit
 - Value vs. type: quotes make something a str (re-check in Day 2 with comparisons like "5" == 5)
@@ -77,4 +83,11 @@ Paste this whole file and say: "Continue my Python course from where I left off.
 - Off-by-one with range (stop value is excluded)
 - Indentation decides what is inside a loop/if
 - Verify before submitting: run with known input, compare actual vs expected
+- Aliasing: b = a shares the list, use .copy() (re-tested OK in Day 4 quiz)
+- In-place methods return None: sort() vs sorted() (re-tested OK in Day 4 quiz)
+- Re-read the requirements and check every item before submitting
+- Name each bug found, don't just fix it silently
+- Completeness: copy each requirement into a checklist comment and tick it only when code produces it (flagged Day 4 and Day 5)
+- Apply fixes in code, don't just describe them in comments
+- Use 4 spaces for indentation, not tabs
 - Descriptive variable names (snake_case, say what the value IS)
