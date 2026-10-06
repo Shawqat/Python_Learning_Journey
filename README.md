@@ -1,8 +1,9 @@
 # Python → Playwright Automation: Progress Tracker
 
 **Started:** 2026-10-05
-**Current position:** Phase 1 · Day 7 (not started)
-**Last updated:** 2026-10-06 (Day 6 complete)
+**Current position:** Phase 1 · Day 10 (not started)
+**Last updated:** 2026-10-06 (Day 9 complete)
+
 ---
 
 ## Phase 1 — Python fundamentals and setup (1–3 weeks)
@@ -12,9 +13,9 @@
 - [x] Day 4: Lists and tuples
 - [x] Day 5: Dictionaries and sets
 - [x] Day 6: Functions
-- [ ] Day 7: Modules and imports
-- [ ] Day 8: File I/O
-- [ ] Day 9: Exceptions
+- [x] Day 7: Modules and imports
+- [x] Day 8: File I/O
+- [x] Day 9: Exceptions
 - [ ] Day 10: Virtual environments and pip
 - [ ] Day 11: Git basics
 - [ ] Phase 1 mini-project
@@ -73,6 +74,15 @@
 | 2026-10-06 | Day 6 Lab | A all correct but missed that show(4) prints 8 as a side effect; B/C/D/E/G correct; F had a hidden bug (checked 'not all digits' instead of 'has a digit') that passed the 4 given tests | Needed one-rule-per-test design to expose the bug; named all bugs in E correctly |
 | 2026-10-06 | Day 6 Quiz | 5/5 (100%) | |
 | 2026-10-06 | Day 6 Part F fix | Self-reported done; explained any(ch.isdigit() for ch in password) correctly | Code not reviewed by instructor |
+| 2026-10-06 | Day 7 Lab | A 4/5 (json.dumps returns str; correctly flagged that line), B sqrt(4) instead of sqrt(144), C multiply used + instead of *, D guard correct, E fixes right but error types not named, F misread the true/True question, G Counter(text) counted characters instead of words | Everything was commented out so nothing could be verified; claimed 'same result' without comparing |
+| 2026-10-06 | Day 7 Quiz | 4/5 (80%) | Missed ImportError vs ModuleNotFoundError |
+| 2026-10-06 | Day 7 fixes (B, C, F, G) | Self-reported done | Code not reviewed by instructor |
+| 2026-10-06 | Day 8 Lab | A modes understood but line counts wrong (2 and 3 lines, not 4 and 5); B printed 'number: 1: A' instead of '1: A'; C never printed total words; D correct; E worked via dumps/loads but never printed final result; F misdiagnosed bug 1 (reading a 'w' file -> io.UnsupportedOperation) so fix still crashed; G wrote log.txt not test_run.log and mixed relative/script-folder paths | Concepts solid; requirement-matching and self-testing still the gap |
+| 2026-10-06 | Day 8 Quiz | 4/5 (80%) | Missed json.dump(data, f) vs json.load(f) argument order |
+| 2026-10-06 | Day 8 fixes (B, C, E, F, G) | Self-reported done | Code not reviewed by instructor |
+| 2026-10-06 | Day 9 Lab | A check() output perfect but exception names 2/6 (int("1.5") is ValueError, {}["a"] is KeyError, [1,2][5] is IndexError, int("12") raises nothing); B/C ok (B didn't test " 7 "); D returned readlines()/error string instead of text/None; E misplaced runtime error (bare except hid it, TypeError at result + 1); F tester missing, 0 wrongly rejected; G not in run_tests(), no edge cases; H finally: raise made retry never retry | Hardest topic so far; exceptions vocabulary and finally semantics need practice |
+| 2026-10-06 | Day 9 Quiz | 5/5 (100%) | |
+| 2026-10-06 | Day 9 fixes (D, E, F, G, H) | Self-reported done | Code not reviewed by instructor |
 
 ## Weak spots to revisit
 - Value vs. type: quotes make something a str (re-check in Day 2 with comparisons like "5" == 5)
@@ -93,4 +103,12 @@
 - Side effects: a function with print inside prints whenever it is called
 - Flag the line you're least sure about in predictions (skipped Days 4-6)
 - Call each function at least twice / test every branch
+- Import error types: ImportError (name missing inside module) vs ModuleNotFoundError (module missing) vs NameError
+- 'Same result' needs evidence: print outputs side by side
+- Use the exact input the task gives (e.g. 144, not 4)
+- json.dump(data, f) writes to file; json.load(f) reads from file (dumps/loads for strings)
+- Match task requirements exactly (filenames, print formats, every requested print)
+- Diagnose errors from the message, bottom up (e.g. reading a 'w' file raises io.UnsupportedOperation)
+- Exception names: KeyError (dict), IndexError (list), ValueError (right type, wrong content), TypeError (wrong type)
+- Never put raise/return in finally; no bare except; return None for 'nothing found' not an error string
 - Descriptive variable names (snake_case, say what the value IS)
