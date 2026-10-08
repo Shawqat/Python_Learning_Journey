@@ -1,8 +1,8 @@
 # Python → Playwright Automation: Progress Tracker
 
 **Started:** 2026-10-05
-**Current position:** Phase 1 · Day 10 (not started)
-**Last updated:** 2026-10-06 (Day 9 complete)
+**Current position:** Phase 1 · Day 11 (not started)
+**Last updated:** 2026-10-06 (Day 10 complete)
 
 ---
 
@@ -16,7 +16,7 @@
 - [x] Day 7: Modules and imports
 - [x] Day 8: File I/O
 - [x] Day 9: Exceptions
-- [ ] Day 10: Virtual environments and pip
+- [x] Day 10: Virtual environments and pip
 - [ ] Day 11: Git basics
 - [ ] Phase 1 mini-project
 
@@ -83,6 +83,9 @@
 | 2026-10-06 | Day 9 Lab | A check() output perfect but exception names 2/6 (int("1.5") is ValueError, {}["a"] is KeyError, [1,2][5] is IndexError, int("12") raises nothing); B/C ok (B didn't test " 7 "); D returned readlines()/error string instead of text/None; E misplaced runtime error (bare except hid it, TypeError at result + 1); F tester missing, 0 wrongly rejected; G not in run_tests(), no edge cases; H finally: raise made retry never retry | Hardest topic so far; exceptions vocabulary and finally semantics need practice |
 | 2026-10-06 | Day 9 Quiz | 5/5 (100%) | |
 | 2026-10-06 | Day 9 fixes (D, E, F, G, H) | Self-reported done | Code not reviewed by instructor |
+| 2026-10-06 | Day 10 Lab | A mostly right (A3 gave freeze command instead of file name + install -r); B good evidence (venv active, folder named env); C worked but failure path (bad domain) untested; F printed a sentence instead of 'requests installed: False'; E 2/3 (PowerShell policy explanation wrong: it blocks script files, not installs); D and G done privately | Best delivery so far: code run, real output pasted |
+| 2026-10-06 | Day 10 Quiz | 5/5 (100%) | |
+| 2026-10-06 | Day 10 fixes (A3, C, F, E3) | Self-reported done | Not reviewed by instructor |
 
 ## Weak spots to revisit
 - Value vs. type: quotes make something a str (re-check in Day 2 with comparisons like "5" == 5)
@@ -111,4 +114,7 @@
 - Diagnose errors from the message, bottom up (e.g. reading a 'w' file raises io.UnsupportedOperation)
 - Exception names: KeyError (dict), IndexError (list), ValueError (right type, wrong content), TypeError (wrong type)
 - Never put raise/return in finally; no bare except; return None for 'nothing found' not an error string
+- Test the failure path of any try/except (trigger the except branch on purpose)
+- Match expected output wording exactly
+- venv folder convention: .venv (learner used env)
 - Descriptive variable names (snake_case, say what the value IS)
