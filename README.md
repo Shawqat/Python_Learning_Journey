@@ -1,8 +1,8 @@
 # Python → Playwright Automation: Progress Tracker
 
 **Started:** 2026-10-05
-**Current position:** Phase 1 · Day 11 (not started)
-**Last updated:** 2026-10-06 (Day 10 complete)
+**Current position:** Phase 1 · Mini-project 'Site Checker' (not started)
+**Last updated:** 2026-10-06 (Day 11 complete; all Phase 1 lessons done)
 
 ---
 
@@ -17,7 +17,7 @@
 - [x] Day 8: File I/O
 - [x] Day 9: Exceptions
 - [x] Day 10: Virtual environments and pip
-- [ ] Day 11: Git basics
+- [x] Day 11: Git basics
 - [ ] Phase 1 mini-project
 
 ## Phase 2 — Web and testing basics (1–2 weeks)
@@ -86,6 +86,9 @@
 | 2026-10-06 | Day 10 Lab | A mostly right (A3 gave freeze command instead of file name + install -r); B good evidence (venv active, folder named env); C worked but failure path (bad domain) untested; F printed a sentence instead of 'requests installed: False'; E 2/3 (PowerShell policy explanation wrong: it blocks script files, not installs); D and G done privately | Best delivery so far: code run, real output pasted |
 | 2026-10-06 | Day 10 Quiz | 5/5 (100%) | |
 | 2026-10-06 | Day 10 fixes (A3, C, F, E3) | Self-reported done | Not reviewed by instructor |
+| 2026-10-06 | Day 11 Lab | A untracked vs unstaged terminology slip; B fine (use 'Add' not 'ADD'); C .gitignore missing .env; D commits bundled/vague, README commit missing, local branch was master; E restore vs restore --staged unclear, typo --cashed, forgot the commit after rm --cached; F fast-forward merge correct; G repo pushed (https://github.com/Shawqat/Python_Learning_Journey, 13 commits, public); H conflict markers recognised, resolution process mixed up with pull/push | Learner has prior Git experience |
+| 2026-10-06 | Day 11 Quiz | 5/5 (100%) | |
+| 2026-10-06 | Day 11 fixes | Skipped by learner (has Git experience) | See open items |
 
 ## Weak spots to revisit
 - Value vs. type: quotes make something a str (re-check in Day 2 with comparisons like "5" == 5)
@@ -117,4 +120,11 @@
 - Test the failure path of any try/except (trigger the except branch on purpose)
 - Match expected output wording exactly
 - venv folder convention: .venv (learner used env)
+- Git: untracked vs unstaged vs staged; add chooses contents, commit takes snapshot; one logical change per commit with specific imperative message
 - Descriptive variable names (snake_case, say what the value IS)
+
+---
+
+## Open items (optional, recommended)
+- Repo hygiene on GitHub: confirm root .gitignore exists and includes .env, .venv/, env/, __pycache__/, *.pyc; confirm no venv folder was pushed (check phase1-python/day_10)
+- Repo front page: README.md is currently the progress tracker; consider renaming it PROGRESS.md and writing a real README; move stray story.txt into its day folder; add a repo description
