@@ -1,0 +1,7 @@
+url,expected_status
+https://example.com,200
+https://jsonplaceholder.typicode.com/todos/1,200
+https://jsonplaceholder.typicode.com/todos/9999999,404
+https://jsonplaceholder.typicode.com/posts/1,200
+https://example.com,404
+https://this-domain-does-not-exist-123.invalid,200
